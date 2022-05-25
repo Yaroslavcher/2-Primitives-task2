@@ -1,25 +1,25 @@
 public class Main {
     public static void main(String[] args) {
         //Вход: начальный счет
-        double n = 100.21;
+        double initAmount = -100.21;
 
         //Вход: сумма пополнения
-        int p = 1001;
+        int plusAmount = 1001;
 
         //Бонус
-        int b;
+        int bonus;
 
         //проверка условия
-        if (p > 1000) {
-            b = p/100;
+        if (plusAmount > 1000) {
+            bonus = plusAmount / 100;
         } else {
-            b = 0;
+            bonus = 0;
         }
         //Формула итогового счета
-        double i = n+p+b;
+        double totalAmount = initAmount + plusAmount + bonus;
 
-        // Вывод на экран бонуса и текущего счета
-        System.out.println(b + " бонусных рублей");
-        System.out.println("На счету " + i + " рублей");
+        // Вывод на экран бонуса и итогового счета
+        System.out.println(bonus + " бонусных рублей");
+        System.out.println("Итоговый счет " + totalAmount + " рублей");
     }
 }
